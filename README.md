@@ -1,7 +1,5 @@
 # Multi-theme-Switcher
 
-#  Multi-theme Switcher
-
 A modern multi-page React application with built-in theme switching support. The app includes three pages — **Home**, **About**, and **Contact** — and allows users to switch between **three themes**:
 
 -  Light Mode (Default)

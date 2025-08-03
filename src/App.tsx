@@ -3,9 +3,9 @@ import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { ThemeProvider } from "./context/themeContext";
 import Home from "./pages/home";
-import AboutUs from "./components/about";
-import Contact from "./components/contact";
-import Layout from "./components/Layout";
+import AboutUs from "./pages/about";
+import Contact from "./pages/contact";
+import Layout from "./components/layout";
 import "./styles/theme.css";
 const App: React.FC = () => {
   

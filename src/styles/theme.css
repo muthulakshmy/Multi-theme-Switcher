@@ -12,15 +12,6 @@
   --card-bg: #3a3a3a;
 }
 
-/* .theme3 {
-  --bg: #fff0f5;
-  --text: #333;
-  --font: 'Pacifico', cursive;
-  --card-bg: #ffe4e1;
-} */
-
-
-
 .theme3 {
   --bg: #fdf3ff;               /* soft pink/purple background */
   --text: #6b0f8e;              /* deep purple text */
@@ -35,54 +26,27 @@ body, .page {
   transition: all 0.3s ease;
 }
 
-/* .card { */
-  /* background: var(--card-bg); */
-  /* padding: 1rem; */
-  /* margin: 1rem; */
-  /* border-radius: 8px; */
-  /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
-/* } */
-
-
-
-/* .card {
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
-} */
-
 .card {
-  /* padding: 8px;         /* 1rem = 16px */
-  /* margin: 8px;          1rem = 16px */ 
-  border-radius: 8px;    /* 0.5rem = 8px (equivalent to Tailwind's rounded-lg) */
+ 
+  border-radius: 8px;  
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
 }
-
 
 .theme2 .card {
   background-color: #3a3a3a;
   color: white;
   border: 1px solid #555;
   transition: all 0.3s ease-in-out;
-
 }
 
 .theme3 .card {
-  /* background: linear-gradient(to top, #ff91c3, #ffe3fa); */
   background-color: #ffe3fa;
-
-  /* color: #fff; */
   font-family: 'Pacifico', cursive;
-  /* text-align: center; */
-  border-radius: 8px;    /* 0.5rem = 8px (equivalent to Tailwind's rounded-lg) */
+  border-radius: 8px;   
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
-  /* transform: scale(1.02); */
 }
-
 
 .product-grid {
   display: flex;
@@ -90,22 +54,6 @@ body, .page {
   justify-content: center;
   gap: 5rem;
 }
-
-
-
-
-/* .header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: var(--card-bg);
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10;
-} */
-
 
 .header {
   position: fixed;
@@ -123,11 +71,9 @@ body, .page {
   transition: all 0.3s ease-in-out;
 }
 
-
 .theme-selector {
   margin-left: 1rem;
 }
-
 
 .loader {
   border: 4px solid #f3f3f3; /* Light grey */

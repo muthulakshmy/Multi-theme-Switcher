@@ -51,7 +51,7 @@ const Header: React.FC = () => {
                 Dark Mode
               </option>
               <option className={optionClasses} value="theme3">
-                Pink Mode
+                Color Mode
               </option>
             </select>
             <div className="absolute inset-y-0 right-2 flex items-center pointer-events-none">
