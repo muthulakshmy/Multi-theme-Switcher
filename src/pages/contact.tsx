@@ -1,21 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Assuming you use React Router for navigation
-import { useTheme } from '../context/themeContext'; // Assuming you still want theme integration
-// import contactUsBanner from '../assets/contact-us-banner.jpg'; // Path to your background image
+import { Link } from 'react-router-dom';
+import { useTheme } from '../context/themeContext';
 import contactUsBanner from '../assets/Contact2.png';
 const ContactUs: React.FC = () => {
   const { theme } = useTheme(); // Use your theme context
 
   return (
-    // <div className={`contact-us-page ${theme} w-full`}>
-    <div className={`${theme === "theme2" ? "bg-[#1e1e1e] text-white" : "bg-white text-gray-900"} w-full`}>
+ <div className={`${theme === "theme2" ? "bg-[#1e1e1e] text-white" : "bg-white text-gray-900"} w-full`}>
 
-      {/* Hero Banner Section */}
+      {/* Contact Us Banner */}
       <div
         className="w-full bg-cover bg-center md:h-80 flex flex-col items-center justify-center text-white"
         style={{ backgroundImage: `url(${contactUsBanner})` }}
       >
-        {/* Optional: Overlay for better text readability */}
+       
         <div className=" inset-0 bg-black opacity-40"></div>
 
         <h1 className="z-10 text-4xl md:text-5xl font-bold mb-2 text-center drop-shadow-lg">
@@ -26,13 +24,13 @@ const ContactUs: React.FC = () => {
         </p>
       </div>
 
-      {/* Main Content Area for Contact Form/Details (Add more here later) */}
+      {/* Main Content Area for Contact Form/Details */}
       <div className="w-full mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <p className="text-center text-lg mb-4">
          We’re here to help, every thread of the way.
         </p>
 
-        {/* Example Contact Form - You can expand this */}
+        {/* Example Contact Form */}
         <div className="bg-white shadow-lg rounded-lg p-8 mb-12">
           <form className="space-y-6">
             <div>

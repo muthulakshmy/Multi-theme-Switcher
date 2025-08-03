@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useState } from "react";
 import { useTheme } from "../context/themeContext";
 import ClothingImage1 from "../assets/clothingImage1.png";
@@ -32,18 +30,21 @@ const Home: React.FC = () => {
     fetchProducts();
   }, []);
 
+  // displaying loader
   const renderLoader = () => (
     <div className="h-screen w-full flex justify-center items-center">
       <div className="loader" />
     </div>
   );
 
+  // displaying error message from api call
   const renderError = () => (
     <div className="h-screen w-full flex justify-center items-center">
       <p>{error}</p>
     </div>
   );
 
+  // card for the products
   const renderProductCard = (product: any) => (
     <div
       key={product.id}
@@ -62,11 +63,10 @@ const Home: React.FC = () => {
   );
 
   const renderProductGrid = () => (
-    <div className="product-grid">
-      {products.map(renderProductCard)}
-    </div>
+    <div className="product-grid">{products.map(renderProductCard)}</div>
   );
 
+  // banner based on theme
   const renderThemeBanner = () => {
     if (theme === "theme1") {
       return (

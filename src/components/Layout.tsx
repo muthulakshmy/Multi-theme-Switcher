@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { useTheme } from "../context/themeContext";
 import Header from "./header";
 import { FaUserFriends, FaUsers } from "react-icons/fa";
-import { HiMenuAlt3 } from "react-icons/hi"; 
+import { HiMenuAlt3 } from "react-icons/hi";
 import { IoCloseSharp } from "react-icons/io5";
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -19,7 +19,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <Header />
 
       {showSidebar ? (
-        // Layout for the root page with theme2: fixed sidebar on desktop, collapsible on mobile
+        // Layout for the home page with theme2: fixed sidebar on desktop, collapsible on mobile
         <div className="flex h-screen w-full relative overflow-hidden">
           {/* Mobile Hamburger Menu */}
           <div
@@ -43,23 +43,19 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           >
             <ul className="space-y-1 mt-4">
               <li>
-                <p className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-700 transition-colors">{FaUsers({})} Men </p>
+                <p className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-700 transition-colors">
+                  {FaUsers({})} Men{" "}
+                </p>
               </li>
               <li>
-                <p
-                  className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-700 transition-colors"
-                >
-                 
-               {FaUsers({})}
+                <p className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-700 transition-colors">
+                  {FaUsers({})}
                   Women
                 </p>
               </li>
               <li>
-                <p
-                  className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-700 transition-colors"
-                >
-                
-               {FaUserFriends({})}
+                <p className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-700 transition-colors">
+                  {FaUserFriends({})}
                   Kids
                 </p>
               </li>
@@ -81,35 +77,26 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 aria-label="Close sidebar"
               >
                 {/* <IoCloseSharp size={24} /> */}
-                  {IoCloseSharp({size: 24})}
-
+                {IoCloseSharp({ size: 24 })}
               </button>
             </div>
 
             <ul className="space-y-1 mt-4">
               <li>
-                <p
-                  className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-700 transition-colors"
-                >
+                <p className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-700 transition-colors">
                   {FaUsers({})}
                   Men
                 </p>
               </li>
               <li>
-                <p
-                  className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-700 transition-colors"
-                >
+                <p className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-700 transition-colors">
                   {FaUsers({})}
                   Women
                 </p>
               </li>
               <li>
-                <p
-                  
-                  className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-700 transition-colors"
-                >
-              
-                {FaUserFriends({})}
+                <p className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-700 transition-colors">
+                  {FaUserFriends({})}
                   Kids
                 </p>
               </li>

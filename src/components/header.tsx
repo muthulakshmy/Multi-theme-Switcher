@@ -44,6 +44,7 @@ const Header: React.FC = () => {
               value={theme}
               onChange={(e) => setTheme(e.target.value as any)}
             >
+              {/* Theme Mode */}
               <option className={optionClasses} value="theme1">
                 Default
               </option>
@@ -70,7 +71,8 @@ const Header: React.FC = () => {
               </svg>
             </div>
           </div>
-
+         
+          {/* Navigation Links */}
           <nav className="hidden md:flex gap-6 font-medium">
             <Link
               to="/"
