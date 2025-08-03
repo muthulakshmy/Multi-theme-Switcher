@@ -11,7 +11,7 @@ A modern multi-page React application with built-in theme switching support. The
 ##  Features
 
 -  Built with React and TypeScript
--  Global theme management using React Context
+-  Global theme management using Context Api
 -  Multiple pages with smooth navigation
 -  Responsive and clean layout
 -  Dynamic theme switcher (Light, Dark, Color)
