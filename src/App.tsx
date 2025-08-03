@@ -5,7 +5,7 @@ import { ThemeProvider } from "./context/themeContext";
 import Home from "./pages/home";
 import AboutUs from "./pages/about";
 import Contact from "./pages/contact";
-import Layout from "./components/layout";
+import Layout from "./components/check";
 import "./styles/theme.css";
 const App: React.FC = () => {
   
