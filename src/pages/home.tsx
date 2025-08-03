@@ -48,16 +48,18 @@ const Home: React.FC = () => {
   const renderProductCard = (product: any) => (
     <div
       key={product.id}
-      className="card rounded-lg shadow-md overflow-hidden w-64 p-4"
+      className="card rounded-lg shadow-md overflow-hidden w-full sm:w-64 p-4"
     >
       <img
         src={product.image}
         alt={product.title}
-        className="w-full h-48 rounded-md"
+        className="w-full h-32 sm:h-48 sm:w-48 rounded-md"
       />
       <div className="p-4">
-        <h2 className="text-lg font-semibold mb-2">{product.title}</h2>
-        <p className="text-md">${product.price}</p>
+        <h2 className="text-base sm:text-lg font-semibold mb-2">
+          {product.title}
+        </h2>
+        <p className="text-sm sm:text-base">${product.price}</p>
       </div>
     </div>
   );
@@ -75,7 +77,7 @@ const Home: React.FC = () => {
           style={{ backgroundImage: `url(${ClothingImage})` }}
         >
           <div className="inset-0 bg-black opacity-40" />
-          <h1 className="z-10 text-4xl md:text-5xl font-bold mb-2 text-center drop-shadow-lg">
+          <h1 className="z-10 text-4xl md:text-5xl  font-bold mb-2 text-center drop-shadow-lg">
             MULTI STORE
           </h1>
           <p className="z-10 text-lg md:text-xl text-center">CLOTHING CO.</p>
